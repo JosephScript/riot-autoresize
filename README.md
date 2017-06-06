@@ -2,11 +2,22 @@
 
 This mixin will make textarea's autoresize. It's very lightweight and does just what it says.
 
+## Installation
+
+```bash
+$ npm install riot-autoresize
+```
+
+Or:
+```bash
+yarn add riot-autoresize
+```
+
 ## Usage
 
 Add the mixin to your application and get the party started:
 
-```
+```javascript
 import autoresize from 'riot-autoresize'
 
 // mount it globally (used by all tags automatically)
@@ -18,7 +29,7 @@ riot.mixin('autoresize', autoresize)
 // Then mount app here using riot.mount
 ```
 
-```
+```javascript
 <my-tag>
   <textarea autoresize></textarea>
 
@@ -26,6 +37,8 @@ riot.mixin('autoresize', autoresize)
   this.mixin('autoresize')
 </my-tag>
 ```
+
+I also recommend using `rows="1"` in the `textarea`, and making styling changes via CSS.
 
 ## Notes
 
