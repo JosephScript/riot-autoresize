@@ -1,6 +1,6 @@
 # riot-autoresize
 
-This mixin will make textarea's autoresize. It's very lightweight and does just what it says.
+This mixin will make `textarea`s autoresize. It's very lightweight and does just what it says.
 
 ## Installation
 
