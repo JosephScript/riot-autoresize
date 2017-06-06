@@ -1,0 +1,28 @@
+{
+  "name": "riot-autoresize",
+  "version": "1.0.0",
+  "description": "This Riot.js mixin will auto resize all textareas with the \"autoresize\" property.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NukaPunk/riot-autoresize.git"
+  },
+  "keywords": [
+    "riotjs",
+    "javascript",
+    "es2015",
+    "html",
+    "autoresize",
+    "riot",
+    "mixin"
+  ],
+  "author": "Joseph Szczesniak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NukaPunk/riot-autoresize/issues"
+  },
+  "homepage": "https://github.com/NukaPunk/riot-autoresize#readme"
+}
