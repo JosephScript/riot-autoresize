@@ -13,10 +13,10 @@ export default function () {
           x.addEventListener('input', autoresize)
         })
       }
-      this.on('mount', function () { 
+      this.on('mount', function () {
         select()
       })
-      this.on('update', function () { 
+      this.on('update', function () {
         select()
       })
     }
