@@ -12,6 +12,7 @@ export default function () {
           x.style.height = (x.scrollHeight) + 'px'
           x.addEventListener('input', autoresize)
           x.addEventListener('blur', autoresize)
+          x.addEventListener('focus', autoresize)
         })
       }
       this.on('mount', () => {
@@ -25,6 +26,7 @@ export default function () {
         autoresizers.forEach(x => {
           x.removeEventListener('input', autoresize)
           x.removeEventListener('blur', autoresize)
+          x.removeEventListener('focus', autoresize)
         })
       })
     }
