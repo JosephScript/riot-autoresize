@@ -11,13 +11,21 @@ export default function () {
         autoresizers.forEach(x => {
           x.style.height = (x.scrollHeight) + 'px'
           x.addEventListener('input', autoresize)
+          x.addEventListener('blur', autoresize)
         })
       }
-      this.on('mount', function () {
+      this.on('mount', () => {
         select()
       })
-      this.on('update', function () {
+      this.on('update', () => {
         select()
+      })
+      this.on('unmount', () => {
+        let autoresizers = this.root.querySelectorAll('textarea[autoresize]') 
+        autoresizers.forEach(x => {
+          x.removeEventListener('input', autoresize)
+          x.removeEventListener('blur', autoresize)
+        })
       })
     }
   }
