@@ -42,4 +42,4 @@ I also recommend using `rows="1"` in the `textarea`, and making styling changes 
 
 ## Notes
 
-Because this is written in ES2015, you may need to transpile your application using Buble or Babel. 
+Because this is written in ES2015, but transpiled automatically by Babel. If you want to use the raw source you may need to transpile your application using Buble or Babel. 
