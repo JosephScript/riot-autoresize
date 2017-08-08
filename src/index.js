@@ -8,12 +8,12 @@ export default function () {
       let select = () => {
         let autoresizers = this.root.querySelectorAll('textarea[autoresize]')
 
-        autoresizers.forEach(x => {
-          x.style.height = (x.scrollHeight) + 'px'
-          x.addEventListener('input', autoresize)
-          x.addEventListener('blur', autoresize)
-          x.addEventListener('focus', autoresize)
-        })
+        for (let i = 0; i < autoresizers.length; i++) {
+          autoresizers[i].style.height = (autoresizers[i].scrollHeight) + 'px'
+          autoresizers[i].addEventListener('input', autoresize)
+          autoresizers[i].addEventListener('blur', autoresize)
+          autoresizers[i].addEventListener('focus', autoresize)
+        }
       }
       this.on('mount', () => {
         select()
@@ -22,12 +22,12 @@ export default function () {
         select()
       })
       this.on('unmount', () => {
-        let autoresizers = this.root.querySelectorAll('textarea[autoresize]') 
-        autoresizers.forEach(x => {
-          x.removeEventListener('input', autoresize)
-          x.removeEventListener('blur', autoresize)
-          x.removeEventListener('focus', autoresize)
-        })
+        let autoresizers = this.root.querySelectorAll('textarea[autoresize]')
+        for (let i = 0; i < autoresizers.length; i++) {
+          autoresizers[i].removeEventListener('input', autoresize)
+          autoresizers[i].removeEventListener('blur', autoresize)
+          autoresizers[i].removeEventListener('focus', autoresize)
+        }
       })
     }
   }
