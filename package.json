@@ -1,6 +1,6 @@
 {
   "name": "riot-autoresize",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "This Riot.js mixin will auto resize all textareas with the \"autoresize\" property.",
   "main": "dist/index.js",
   "scripts": {
