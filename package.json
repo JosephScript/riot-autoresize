@@ -1,6 +1,6 @@
 {
   "name": "riot-autoresize",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "This Riot.js mixin will auto resize all textareas with the \"autoresize\" property.",
   "main": "dist/index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/NukaPunk/riot-autoresize#readme",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
+    "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1"
   }
 }

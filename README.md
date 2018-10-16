@@ -1,6 +1,8 @@
 # riot-autoresize
 
-This mixin will make `textarea`s autoresize. It's very lightweight and does just what it says.
+This mixin will make `textarea`s autoresize. So when you type/paste a bunch of text they will grow automatically, and shrink back down when you delete it. 
+
+It's very lightweight and does just what it says.
 
 ## Installation
 
@@ -38,7 +40,7 @@ riot.mixin('autoresize', autoresize)
 </my-tag>
 ```
 
-I also recommend using `rows="1"` in the `textarea`, and making styling changes via CSS.
+I also recommend using `rows="1"` in the `textarea`, and making styling changes via CSS such as `min-height`.
 
 ## Notes
 
